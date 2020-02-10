@@ -71,9 +71,18 @@
     &__main{
       &__text{
         font-size:25px;
+        padding-top:15px;
+        padding-left:10px;
       }
       &__contents_box{
+        display: flex;
         &__content{
+          
+          width:280px;
+          &__text{
+            padding-bottom:10px;
+            
+          }
           &__info{
             &--image{
               position: relative;
