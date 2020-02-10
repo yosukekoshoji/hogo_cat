@@ -1,0 +1,66 @@
+.main
+  .header
+    .header__search_box
+      .header__search_box__input
+      .header__search_box__icon
+        %i.fas.fa-search
+    .header__tabs_box
+      .header__tabs_box__area
+        = link_to "地域で探す","#"
+      .header__tabs_box__color
+        = link_to "毛色で探す","#"
+      .header__tabs_box__likes
+        = link_to "いいねランキング","#"
+      .header__tabs_box__login
+        = link_to "ログイン","#"
+  .contents
+    .contents__image
+      %h1　ようこそ地域猫登録アプリへ！
+    .contents__main
+      %h3.contents__main__text
+        人気ランキング
+      .contents__main__contents_box
+        .contents__main__contents_box__content
+          いいね数１位
+          .contents__main__contents_box__content__info
+            =link_to "#"
+            .contents__main__contents_box__content__info--image
+              = image_tag 'top_cat.jpg',height: '188', width: '272', class: 'mini_cat'
+              .contents__main__contents_box__content__info--image__name
+                名前:みいちゃん
+            .contents__main__contents_box__content__info--text
+              地域:蒲田
+              毛色:トラ柄
+              特徴:人懐っこい
+
+      %h3.contents__main__text
+        新入り猫
+      .contents__main__contents_box
+        .contents__main__contents_box__content
+          いいね数１位
+          .contents__main__contents_box__content__info
+            =link_to "#"
+            .contents__main__contents_box__content__info--image
+              = image_tag 'top_cat.jpg',height: '188', width: '272', class: 'mini_cat'
+              .contents__main__contents_box__content__info--image__name
+                名前:みいちゃん
+            .contents__main__contents_box__content__info--text
+              地域:蒲田
+              毛色:トラ柄
+              特徴:人懐っこい
+
+      %h3.contents__main__text
+        人気ランキング
+      .contents__main__contents_box
+        .contents__main__contents_box__content
+          いいね数１位
+          .contents__main__contents_box__content__info
+            =link_to "#"
+            .contents__main__contents_box__content__info--image
+              = image_tag 'top_cat.jpg',height: '188', width: '272', class: 'mini_cat'
+              .contents__main__contents_box__content__info--image__name
+                名前:みいちゃん
+            .contents__main__contents_box__content__info--text
+              地域:蒲田
+              毛色:トラ柄
+              特徴:人懐っこい
