@@ -1,0 +1,57 @@
+.show
+  -# .header
+  -#   .header__search_box
+  -#     .header__search_box__input
+  -#       = link_to "#" do
+  -#         .header__search_box__input__icon
+  -#           %i.fas.fa-search
+  -#   .header__tabs_box
+  -#     .header__tabs_box__area
+  -#       = link_to "地域で探す","#"
+  -#     .header__tabs_box__color
+  -#       = link_to "毛色で探す","#"
+  -#     .header__tabs_box__likes
+  -#       = link_to "いいねランキング","#"
+  -#     .header__tabs_box__login
+  -#       = link_to "ログイン","#"
+  .show__contents
+    .show__contents__text
+      .show__contents__text--create
+        発見日：2020/02/02
+      .show__contents__text--living
+        生息場所：蒲田
+    .show__contents--images
+      .show__contents--images__image
+        = image_tag 'top_cat.jpg',height: '500', width: '1000',class:"image"
+    .show__contents--info
+      .show__contents--info__text
+        %h1　猫ちゃんの詳細情報
+      .show__contents--info__details
+        .show__contents--info__details--likes
+          %h3 いいね：220
+        .show__contents--info__details--name
+          %br名前：しょーきちさん
+        .show__contents--info__details--gender
+          %br性別：オス
+        .show__contents--info__details--color
+          %br毛色：サバトラ
+        .show__contents--info__details--comment
+          %br特徴：おとなしい性格です。結構人懐っこいです。よく近所の車の上で日向ぼっこしています。
+    .show__contents--coment_box
+      %h1.text1　コメント
+      .show__contents--coment_box__content
+        .show__contents--coment_box__content--name_box
+          .show__contents--coment_box__content--name_box__nickname
+            投稿者：たけぽん
+          .show__contents--coment_box__content--name_box__time
+            投稿時間：2020/02/03
+        .show__contents--coment_box__content--coment
+          かわいい
+      .show__contents--coment_box__content
+        .show__contents--coment_box__content--name_box
+          .show__contents--coment_box__content--name_box__nickname
+            投稿者：たけぽん
+          .show__contents--coment_box__content--name_box__time
+            投稿時間：2020/02/03
+        .show__contents--coment_box__content--coment
+          かわいい

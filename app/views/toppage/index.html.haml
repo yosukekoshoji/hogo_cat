@@ -2,8 +2,9 @@
   .header
     .header__search_box
       .header__search_box__input
-      .header__search_box__icon
-        %i.fas.fa-search
+        = link_to "#" do
+          .header__search_box__input__icon
+            %i.fas.fa-search
     .header__tabs_box
       .header__tabs_box__area
         = link_to "地域で探す","#"
@@ -80,3 +81,4 @@
               地域:蒲田
               %br毛色:トラ柄
               特徴:人懐っこい
+              
