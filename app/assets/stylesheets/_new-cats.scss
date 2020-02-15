@@ -1,0 +1,118 @@
+.new{
+  height:100%;
+  width:100%;
+
+  &__main{
+    border: 1px solid black;
+    margin: auto;
+    height:100%;
+    width:700px;
+    background-color: #dde1e7;
+    &__text{
+      padding:15px 0 15px 0;
+      width:100%;
+      height:50px;
+      background-color:yellow;
+      border-bottom:1px solid white;
+      text-align: center;
+      line-height:50px;
+      font-size:30px;
+    }
+    &__image_post{
+      width:100%;
+      height:150px;
+      background-color: white;
+      border-bottom:1px solid white;
+
+    }
+    &__info_box{
+      width:100%;
+      height:100%;
+      text-align: center;
+      &--name_text{
+        width:100%;
+        height:100%;
+        padding:15px 0 15px 0;
+        font-size: 20px;
+        border-bottom:1px solid white;
+        .text31{
+          padding-bottom: 10px;
+        }
+      }
+      &--name_box{
+        text-align: center;
+        .input_box{
+          height:20px;
+        }
+      }
+      &--gender_living{
+        display: flex;
+        height:100%;
+        width:50%;
+        &--gender{
+          text-align: center;
+          width: 350px;
+          height:100%;
+          .text32{
+            width: 350px;
+          }
+        }
+        &--living{
+          width: 350px;
+          height:100%;
+          text-align: center;
+          &__box{
+            width:350px;
+            height:100%;
+            .lives_input{
+              width: 100px;
+              height: 30px;
+            }
+          }
+        }
+      }
+      &--color{
+        border-bottom:1px solid white;
+        padding-bottom: 20px;
+        &__input{
+          .color_input{
+            width: 100px;
+            height: 30px;
+          }
+        }
+      }
+      &--features{
+
+        text-align: center;
+        .text35{
+          font-size:30px;
+          padding:20px 0 20px 0;
+          border-bottom:1px solid white;
+        }
+        &__input_box{
+          width:100%;
+          height:100%;
+          padding-bottom: 30px;
+          padding-top:30px;
+          .textarea{
+            width: 400px;
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+  &__submit{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .send{
+      width: 100px;
+      height: 30px;
+      background-color: blue;
+      color: white;
+    }
+  }
+}

@@ -1,24 +1,47 @@
-# README
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|email|string|null: false|
+|password|string|null: false|
+|username|string|null: false|
+### Association
+- has_many :cats
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## catsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|color|string|null: false|
+|gender|string|null: false|
+|name|string|null: false|
+|coment|string|null: false|
+### Association
+- belongs_to :cats
+- belongs_to :areas
+- has_many :photos
 
-Things you may want to cover:
+##　areasテーブル
+|Column|Type|Options|
+|------|----|-------|
+|area|string|null: false|
+|cat_id|references|null: false, foreign_key: true|
 
-* Ruby version
+### Association
+- has_many :cats
 
-* System dependencies
+##　photosテーブル
+|Column|Type|Options|
+|------|----|-------|
+|area|string|null: false|
+|cat_id|references|null: false, foreign_key: true|
 
-* Configuration
+### Association
+- belongs_to :cats
 
-* Database creation
+##　likesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|area|string|null: false|
+|cat_id|references|null: false, foreign_key: true|
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
+- belongs_to :cats

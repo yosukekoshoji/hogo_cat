@@ -1,0 +1,34 @@
+.new
+  .new__main
+    .new__main__text
+      %h1.text30 猫ちゃんを投稿してください
+    .new__main__image_post
+    .new__main__info_box
+      .new__main__info_box--name_text
+        %h1.text31 猫ちゃんの名前
+        .new__main__info_box--name_box
+          %input.input_box{type:'text',placeholder:' 例)たろう'}
+      .new__main__info_box--gender_living
+        .new__main__info_box--gender_living--gender
+          %h3.text32 性別
+          .new__main__info_box--gender_living--gender__chack1
+            =check_box_tag :check1 do
+              =label_tag :check1, "オス"
+          .new__main__info_box--gender_living--gender__chack2
+            =check_box_tag :check2 do
+              =label_tag :check2, "メス"
+        .new__main__info_box--gender_living--living
+          生息地
+          .new__main__info_box--gender_living--living__box
+            %select.lives_input
+      .new__main__info_box--color
+        %h3.text34_color 毛色
+        .new__main__info_box--color__input
+          %select.color_input
+      .new__main__info_box--features
+        %h3.text35 特徴
+        .new__main__info_box--features__input_box
+          %input.textarea{type:'textarea',placeholder:' 例)人懐っこい性格です。よく日向ぼっこしています'}
+  .new__submit
+    .new__submit__box
+      %input.send{:type => "submit", :value => "登録する"}

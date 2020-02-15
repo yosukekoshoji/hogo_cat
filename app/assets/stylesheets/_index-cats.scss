@@ -1,0 +1,32 @@
+.ranking{
+  width: 100%;
+  height: 100%;
+  background-color:#dde1e7;
+  &__contents{
+    &--contents_box{
+      border:1px solid whitesmoke;
+      display: flex;
+      &--text_box{
+        &--name{
+          padding: 15px 0 20px 10px;
+        }
+        &--likes{
+          padding: 0 0 20px 10px;
+        }
+      }
+
+    }
+  }
+  .text10{
+    font-size:40px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .no1{
+    font-size: 20px;
+    padding:20px 0 10px 20px;
+    color:red;
+    width:100%;
+    height:100%;
+  }
+}

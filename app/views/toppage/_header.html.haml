@@ -1,0 +1,24 @@
+%header
+  .header__search_box
+    .header__search_box__input
+      = link_to "#" do
+        .header__search_box__input__icon
+          %i.fas.fa-search
+  .header__tabs_box
+    .header__tabs_box__area
+      = link_to "地域で探す","#"
+    .header__tabs_box__color
+      = link_to "毛色で探す","#"
+    .header__tabs_box__likes
+      = link_to "いいねランキング","#"
+    - if user_signed_in?
+      .header__tabs_box__newPost
+        = link_to "新規投稿",new_post_path
+      .header_tabs_box__logOut
+        = link_to "ログアウト",destroy_user_session_path,method: :delete
+    - else
+      .header__tabs_box__login
+        = link_to "ログイン",new_user_session_path
+      .header__tabs_box__singup
+        = link_to "新規登録",new_user_registration_path
+  -# - end
