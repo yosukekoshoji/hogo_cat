@@ -10,11 +10,11 @@
     .header__tabs_box__color
       = link_to "毛色で探す","#"
     .header__tabs_box__likes
-      = link_to "いいねランキング","#"
+      = link_to "いいねランキング",cats_path
     - if user_signed_in?
       .header__tabs_box__newPost
-        = link_to "新規投稿",new_post_path
-      .header_tabs_box__logOut
+        = link_to "新規投稿",new_cat_path
+      .header__tabs_box__logOut
         = link_to "ログアウト",destroy_user_session_path,method: :delete
     - else
       .header__tabs_box__login
